@@ -111,7 +111,7 @@ if [[ $getSismos = $localSismos ]]; then
     tput cup 14 0
     tput setaf 6
     echo "[STATUS] Esperando sismo...     "
-    sleep 2
+    sleep 60
 elif [[ $getSismos = $noweb ]]; then
     tput cup 14 0
     tput setaf 1
