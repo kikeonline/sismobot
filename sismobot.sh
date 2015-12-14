@@ -1,4 +1,14 @@
 #!/bin/bash
+#Codigos de estilo
+esc=`echo -en "\033"`
+cc_red="${esc}[0;31m"
+cc_green="${esc}[0;32m"
+cc_yellow="${esc}[0;33m"
+cc_blue="${esc}[0;34m"
+cc_normal=`echo -en "${esc}[m\017"`
+underline=`tput smul`
+nounderline=`tput rmul`
+bold=`tput bold`
 
 #Funcion para terminar el script con limpieza general.
 function finish() {
@@ -18,7 +28,7 @@ function finish() {
 function finishl() {
   banner
   infoline
-  cat /tmp/sismoslist.txt
+  cat /tmp/sismoslist.txt 2> /dev/null || echo "${cc_red}[STATUS] NO SE PUDO CONECTAR A INETER.${cc_normal}"
   rm -f /tmp/sismoslist.txt
   tput setaf 3
   echo
@@ -34,22 +44,10 @@ function infoline() {
     echo
 }
 
-
 #Trampa para CONTROL-C
 trap finish SIGINT SIGQUIT SIGTSTP
 
-#Codigos de estilo
-esc=`echo -en "\033"`
-cc_red="${esc}[0;31m"
-cc_green="${esc}[0;32m"
-cc_yellow="${esc}[0;33m"
-cc_blue="${esc}[0;34m"
-cc_normal=`echo -en "${esc}[m\017"`
-underline=`tput smul`
-nounderline=`tput rmul`
-bold=`tput bold`
-
-#Titulo
+#Titulo banner
 function banner() {
     tput civis
     tput clear
