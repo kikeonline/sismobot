@@ -37,5 +37,5 @@ Si corren el script en MAC OS pueden descomentar la *linea 147* para recibir not
 
 
 # INETER
-INSTITUTO NICARAGÜENSE DE ESTUDIOS TERRITORIALES
-Los datos provienen de http://www.ineter.gob.ni/
+Los datos provienen del
+INSTITUTO NICARAGÜENSE DE ESTUDIOS TERRITORIALES  http://www.ineter.gob.ni/
