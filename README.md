@@ -1,6 +1,6 @@
 # SismoBot
 Shell script para monitorear los últimos sismos en Nicaragua detectados por INETER.
-![alt tag](https://raw.githubusercontent.com/kikeonline/sismobot/master/readme/screen.png)
+![alt tag](https://raw.githubusercontent.com/kikeonline/sismobot/master/readme/sismobotscreen.png)
 
 # Instalación/Uso
 
