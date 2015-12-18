@@ -30,7 +30,7 @@ Shell script para monitorear los últimos sismos en Nicaragua detectados por INE
   ```
 
 # Código
-Si corren el script en MAC OS pueden descomentar la *linea 147* para recibir notifcaciones.
+Si corren el script en MAC OS pueden descomentar la *linea 147* para recibir notifcaciones de escritorio.
 ```shel
 #osascript -e "display notification \"$lugar\" with title \"SismoBot\" subtitle \"$mag\" sound name \"Purr\""
 ```
